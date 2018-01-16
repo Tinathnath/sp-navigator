@@ -1,23 +1,23 @@
 {
+    "manifest_version": 2,
     "name": "SharePoint navigator",
     "version": "1.0",
     "description": "Easy and quick navigation through SharePoint sites for administrators",
-    "icons": {
-        "128": "icon_128.png"
-    },
+    
     "background": {
         "persistent": false,
         "scripts": [
-            "bg.js"
+            "app.js"
         ]
     },
     "permissions": [
-        "http://*.sharepoint.com/",
-        "https://*.sharepoint.com/"
+        "http://*.sharepoint.com/*",
+        "https://*.sharepoint.com/*",
+        "tabs"
     ],
-    "browser_action": {
+    "page_action": {
         "default_title": "SharePoint navigator",
-        "default_icon": "icon_19.png",
+        
         "default_popup": "popup.html"
     }
 }
